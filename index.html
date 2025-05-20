@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularz - Zgłoś Swój Ulubiony Film 2025</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Zgłoś Swój Ulubiony Film 2025</h1>
+</header>
+
+<main>
+  <div class="container">
+    <form action="/submit-film" method="POST">
+      <label for="film-name">Tytuł Filmu:</label>
+      <input type="text" id="film-name" name="film-name" required>
+
+      <label for="film-director">Reżyser:</label>
+      <input type="text" id="film-director" name="film-director" required>
+
+      <label for="film-year">Rok Produkcji:</label>
+      <input type="number" id="film-year" name="film-year" min="1900" max="2025" required>
+
+      <label for="film-rating">Ocena Filmu (1-10):</label>
+      <input type="number" id="film-rating" name="film-rating" min="1" max="10" required>
+
+      <label for="film-review">Twoja Recenzja:</label>
+      <textarea id="film-review" name="film-review" rows="5" required></textarea>
+
+      <label for="user-email">Twój E-mail (opcjonalnie):</label>
+      <input type="email" id="user-email" name="user-email">
+
+      <input type="submit" value="Wyślij Film">
+    </form>
+  </div>
+</main>
+
+<footer>
+  Najlepsze Filmy 2025| Jakub Zimny
+</footer>
+
+</body>
+</html>
